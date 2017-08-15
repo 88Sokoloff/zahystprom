@@ -1,5 +1,5 @@
 {
-  "name": "grushevsky",
+  "name": "zahystprom",
   "version": "1.0.0",
   "main": "index.js",
   "dependencies": {
@@ -19,13 +19,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/88Sokoloff/grushevsky.git"
+    "url": "git+https://github.com/88Sokoloff/zahystprom.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/88Sokoloff/grushevsky/issues"
+    "url": "https://github.com/88Sokoloff/zahystprom/issues"
   },
-  "homepage": "https://github.com/88Sokoloff/grushevsky#readme",
+  "homepage": "https://github.com/88Sokoloff/zahystprom#readme",
   "description": ""
 }

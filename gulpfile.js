@@ -50,7 +50,7 @@ gulp.task('server', ['img', 'css', 'scripts', 'html'], function() {
         server: {
             baseDir: 'dist'
         },
-        port: 8080
+        port: 8081
     });
 
     gulp.watch(["src/css/*"], ['css']);
