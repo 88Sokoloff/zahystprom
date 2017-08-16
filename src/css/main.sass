@@ -97,10 +97,25 @@ header
 		font-size: 62px
 		margin: 0
 	h2
-		color: #bfc8d0
+		color: $grey
 		margin: 0
 
-.description
+.description_wrapper
 	h1
-		color: $header_color
 		text-align: center
+		color: $header_color
+.description
+	display: flex
+	justify-content: space-around
+	.description_img
+		width: 600px
+		margin-top: 100px
+		height: 501px
+	.description_data
+		width: 650px
+		h1
+			color: $grey
+		p
+			color: $font_color
+			font-size: 19px
+			line-height: 42px
