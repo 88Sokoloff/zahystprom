@@ -19,6 +19,12 @@ gulp.task ('img', function() {
     .pipe(browserSync.stream());
 });
 
+gulp.task ('pdf', function() {
+  return gulp.src('src/*.pdf')
+    .pipe(gulp.dest('dist'))
+    .pipe(browserSync.stream());
+});
+
 gulp.task ('css', ['sprites'], function() {
   return gulp.src('src/css/main.sass')
     .pipe(sass())
@@ -45,7 +51,7 @@ gulp.task('scripts', function() {
 });
 
 
-gulp.task('server', ['img', 'css', 'scripts', 'html'], function() {
+gulp.task('server', ['img', 'css', 'scripts', 'html', 'pdf'], function() {
     browserSync({
         server: {
             baseDir: 'dist'
@@ -56,6 +62,7 @@ gulp.task('server', ['img', 'css', 'scripts', 'html'], function() {
     gulp.watch(["src/css/*"], ['css']);
     gulp.watch(["src/js/*"], ['scripts']);
     gulp.watch(["src/img/*"], ['sprites']);
+    gulp.watch("src/*.pdf", ['pdf']);
     gulp.watch("src/*.html", ['html']).on('change', browserSync.reload);
 
 });
