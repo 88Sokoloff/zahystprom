@@ -63,8 +63,10 @@ header
 		a
 			color:  $header_color
 			font-weight: bold
+			padding: 10px
 			&:hover
 				color: $link_hover
+				background-color: grey
 .logo
 	width: 300px
 .menu
@@ -143,7 +145,37 @@ header
 			content: url(../img/checked.png)
 .sec_characterhistic
 	margin-top: 80px
-	height: 700px
+	height: 550px
+
+.div_characterhistic
+	width: 100%
+	h1
+		text-align: center
+		color: $header_color
+		padding-bottom: 50px
+.sec_yellow
+	background-color: #ffe000
+	box-shadow: 0 0 10px rgba(0,0,0,0.5)
+	width: 700px
+	height: 120px
+	margin: 0 auto
+	text-align: center
+	font-size: 21px
+.txt_line
+	text-decoration: underline
+	font-weight: bold
+.ul_characterhistic
+	font-size: 18px
+	margin: 0 auto
+	width: 700px
+	margin-top: 40px 
+	ul
+		li
+			list-style: none
+
+			&:before
+				content: url(../img/right-arrow.png)
+
 .sec_about
 	background-image: url("../img/div_2.png") 
 	width: 100%
@@ -268,10 +300,6 @@ header
 			width: 785px
 		h1
 			font-size: 23px
-	.sec_characterhistic
-		height: 550px
-		img
-			width: 98%
 	.news-section
 		h1
 			font-size: 32px
@@ -285,7 +313,15 @@ header
 	
 @media all and (max-width: 835px)
 	.menu
-		display: none
+		display: block
+		width: 100%
+	.menu_main
+		display: block
+		text-align: center
+		li
+			padding: 10px
+	.header_bottom
+		display: block
 	.wrapper_main_div
 		height: 348px
 	.description
@@ -310,8 +346,6 @@ header
 		li
 			&:before
 				content: url(../img/checked-mini.png)
-	.sec_characterhistic
-		height: 480px
 	.btn_div
 		margin-top: 30px
 	.news-section
@@ -330,6 +364,16 @@ header
 		line-height: 42px
 		width: 540px
 
+@media all and (max-width: 715px)
+	.sec_yellow
+		width: 480px
+		height: 131px
+		font-size: 18px
+		padding: 1px 0px
+	.ul_characterhistic
+		font-size: 15px
+		width: 480px
+
 @media all and (max-width: 600px)
 	.wrapper_main_div
 		height: 288px
@@ -342,8 +386,6 @@ header
 		.description_data
 			h1
 				top: 420px
-	.sec_characterhistic
-		height: 390px
 	.sec_blue
 		ul
 			width: 455px
@@ -392,6 +434,14 @@ header
 	.sec_characterhistic
 		height: auto
 		margin-bottom: 20px
+	.ul_characterhistic
+		font-size: 13px
+		width: 100%
+	.sec_yellow
+		width: 80%
+		height: 109px
+		font-size: 13px
+		padding: 13px 0px
 	.sec_about
 		.about_text
 			line-height: 33px
@@ -401,3 +451,6 @@ header
 			font-size: 16px
 	.up_btn
 		right: 30px
+@media all and (max-width: 332px)
+	.sec_yellow
+		font-size: 12px
