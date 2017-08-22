@@ -13,6 +13,12 @@ $(document).ready(function() {
   });
 });
 
+// BURGER MENU ICON
+$(document).ready(function(){
+  $('#burger').click(function(){
+    $(this).toggleClass('open');
+  });
+});
 
 // Scroll to top button
 $(window).scroll(function() {
